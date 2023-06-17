@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +16,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
       rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width:767.9px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width:768px) and (max-width:1157.9px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width:1158px)"
     />
   </head>
 
@@ -43,7 +56,7 @@
               <a class="link head-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item-head">
-              <a class="link head-link" href="">Contacts</a>
+              <a class="link head-link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -64,9 +77,84 @@
           </ul>
         </address>
       </div>
+
+      <div class="header-container">
+        <a class="logo-header logo-header-mobile link" href="./index.html"
+          >Web<span class="logo first-letter">Studio</span>
+        </a>
+        <button class="header-btn js-open-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-info-wrapper js-menu-container">
+        <div class="mobile-menu">
+          <button class="close-menu-btn js-close-menu" type="button">
+            <svg class="svg-menu-closed" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <div class="">
+            <ul class="list list-menu">
+              <li class="item-menu"><a class="link" href="#"></a>Studio</li>
+              <li class="item-menu">
+                <a class="link" href="./portfolio.html"></a>Portfolio
+              </li>
+              <li class="item-menu"><a class="link" href="#"></a>Contacts</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="list">
+              <li class="tel-item">
+                <a class="link" href="tel:+110001111111"></a>+11 (000) 111-11-11
+              </li>
+              <li class="addres-item">
+                <a class="link link-email-menu" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="list social-group-menu">
+              <li class="item-social-menu">
+                <a class="link-social-menu" href="">
+                  <svg class="svg-social-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-menu">
+                <a class="link-social-menu" href="">
+                  <svg class="svg-social-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-menu">
+                <a class="link-social-menu" href="">
+                  <svg class="svg-social-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-menu">
+                <a class="link-social-menu" href="">
+                  <svg class="svg-social-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="section-one">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
@@ -457,7 +545,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-element">
@@ -551,6 +639,15 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./mobile-menu.js"></script>
+
     <script src="./modal.js"></script>
   </body>
 </html>
