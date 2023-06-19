@@ -76,12 +76,6 @@
             </li>
           </ul>
         </address>
-      </div>
-
-      <div class="header-container">
-        <a class="logo-header logo-header-mobile link" href="./index.html"
-          >Web<span class="logo first-letter">Studio</span>
-        </a>
         <button class="header-btn js-open-menu">
           <svg width="32" height="22">
             <use href="./images/icons.svg#icon-menu-btn"></use>
@@ -98,21 +92,28 @@
           </button>
 
           <div class="list list-menu">
-            <ul>
-              <li class="item-menu"><a class="link" href="#"></a>Studio</li>
+            <ul class="list">
               <li class="item-menu">
-                <a class="link" href="./portfolio.html"></a>Portfolio
+                <a class="link link-menu studio-color" href="./index.html">Studio</a>
               </li>
-              <li class="item-menu"><a class="link" href="#"></a>Contacts</li>
+              <li class="item-menu">
+                <a class="link link-menu" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="item-menu">
+                <a class="link link-menu" href="#">Contacts</a>
+              </li>
             </ul>
           </div>
           <div>
             <ul class="list">
               <li class="tel-item">
-                <a class="link" href="tel:+110001111111"></a>+11 (000) 111-11-11
+                <a class="link link-addres-menu" href="tel:+110001111111"></a
+                >+11 (000) 111-11-11
               </li>
               <li class="addres-item">
-                <a class="link link-email-menu" href="mailto:info@devstudio.com"
+                <a
+                  class="link link-addres-menu"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -154,14 +155,14 @@
     </header>
 
     <main>
-      <!-- <section class="section-one">
+      <section class="section-one">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="order-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="section-two">
         <div class="container">
@@ -227,19 +228,38 @@
           <h2 class="title-two">What are we doing</h2>
           <ul class="list image-gad">
             <li class="list-device">
+              <picture>
+                <source 
+                srcset="./images/img1.jpg x1,
+                ./images/imac-ada.jpg x2"
+                type="image/jpg">
+              
               <img src="./images/img1.jpg" alt="iMac" width="360" />
+              </picture>
             </li>
 
             <li class="list-device">
+               <picture>
+                <source 
+                srcset="./images/img2.jpg x1,
+                ./images/mobile-ada.jpg x2"
+                type="image/jpg">
               <img src="./images/img2.jpg" alt="mobile" width="360" />
+               </picture>
             </li>
 
             <li class="list-device">
+              <picture>
+                <source 
+                srcset="./images/img3.jpg x1,
+                ./images/mobile-notebook-ada.jpg x2"
+                type="image/jpg">
               <img
                 src="./images/img3.jpg"
                 alt="mobile and notebook"
                 width="360"
               />
+              </picture>
             </li>
           </ul>
         </div>
@@ -250,12 +270,21 @@
           <h2 class="title-two titl-team">Our Team</h2>
           <ul class="list teams-list">
             <li class="list-img">
-              <img
-                class="team-photo"
-                src="./images/m.jpg"
-                alt="Mark Guero"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/images/m.jpg               1x,
+                    ./images/web-studio-mobail/mark.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/m.jpg"
+                  alt="Mark Guero"
+                  width="264"
+                />
+              </picture>
               <div class="team-workers">
                 <h3 class="title-three team-name">Mark Guerrero</h3>
                 <p class="description team-skill">Product Designer</p>
@@ -293,12 +322,21 @@
             </li>
 
             <li class="list-img">
-              <img
-                class="team-photo"
-                src="./images/t.jpg"
-                alt="Tom Ford"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/images/t.jpg              1x,
+                    ./images/web-studio-mobail/tom.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/t.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
               <div class="team-workers">
                 <h3 class="title-three team-name">Tom Ford</h3>
                 <p class="description team-skill">Frontend Developer</p>
@@ -336,12 +374,21 @@
             </li>
 
             <li class="list-img">
+              <picture>
+                <source
+                  srcset="
+                    ./images/images/c.jpg               1x,
+                    ./images/web-studio-mobail/camila.jpg 2x
+                  "
+                  type="image/jpg"
+                />
               <img
                 class="team-photo"
                 src="./images/c.jpg"
                 alt="Camila garcia"
                 width="264"
               />
+              </picture>
               <div class="team-workers">
                 <h3 class="title-three team-name">Camila Garcia</h3>
                 <p class="description team-skill">Marketing</p>
@@ -379,6 +426,14 @@
             </li>
 
             <li class="list-img">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/images/d.jpg               1x,
+                    ./images/web-studio-mobail/daniel.jpg 2x
+                  "
+                  type="image/jpg"
+                />
               <img
                 class="team-photo"
                 src="./images/d.jpg"
@@ -480,7 +535,7 @@
       </section>
     </main>
 
-    <!-- <footer class="footer-main">
+    <footer class="footer-main">
       <div class="container content-footer">
         <div class="descr-footer">
           <a class="link footer-logo" href="./index.html"
@@ -544,7 +599,7 @@
           </form>
         </div>
       </div>
-    </footer>  -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-element">

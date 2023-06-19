@@ -1,0 +1,34 @@
+.container {
+  min-width: 1158px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+
+.list-group {
+  width: calc((100% - 72px) / 4);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.social-footer {
+  margin-right: 80px;
+}
+
+.list-addres-head {
+  gap: 40px;
+}
+
+.form-footer {
+  display: flex;
+  gap: 24px;
+}

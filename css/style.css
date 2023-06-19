@@ -41,12 +41,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* HEADER */
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -130,10 +124,7 @@ ul {
 .list-addres-head {
   display: flex;
   align-items: center;
-}
-
-.list-addres:not(:last-child) {
-  margin-right: 40px;
+  gap: 12px;
 }
 
 .addres {
@@ -172,6 +163,18 @@ ul {
   text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/background/people-office-ada.jpg);
+  }
+}
+
 .title {
   margin-bottom: 48px;
   max-width: 496px;
@@ -208,7 +211,6 @@ ul {
 .order-button:focus {
   background-color: var(--ocean-color);
 }
-/* SECTION-1 */
 
 /* SECTION-2 */
 .section-two {
@@ -230,10 +232,6 @@ ul {
   gap: 24px;
 }
 
-.list-group {
-  width: calc((100% - 72px) / 4);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -245,10 +243,6 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.text-sectiontwo {
-  width: 264px;
 }
 
 /* SECTION-3 */
@@ -366,7 +360,6 @@ ul {
 }
 
 .title-section-five {
-  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -602,10 +595,6 @@ ul {
   fill: var(--graywhite-color);
 }
 
-.social-footer {
-  margin-right: 80px;
-}
-
 .descr-form-footer {
   font-weight: 500;
   margin-bottom: 16px;
@@ -616,8 +605,8 @@ ul {
 }
 
 .form-footer {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  gap: 24px; */
 }
 
 .input-form-footer {
@@ -642,6 +631,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;

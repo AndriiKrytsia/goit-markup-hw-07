@@ -1,0 +1,124 @@
+.container {
+  padding: 0 16px;
+  max-width: 100%;
+}
+
+.header-btn {
+  display: none;
+}
+
+.menu-info-wrapper {
+  display: none;
+}
+/* Header */
+.logo-header {
+  margin-right: 120px;
+}
+
+.list-addres-head {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.list-addres {
+  display: flex;
+}
+
+.addres {
+  display: flex;
+  row-gap: 12px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+}
+
+/* SECTION-1 */
+
+/* SECTION-2 */
+.section-two {
+  padding: 96px 0;
+}
+
+.svg-group {
+  display: none;
+}
+
+.list-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 72px;
+}
+
+.list-group {
+  width: calc((100% - 24px) / 2);
+}
+
+/* SECTION-3 */
+.section-three {
+  display: none;
+}
+
+/* SECTION-4 */
+.section-four {
+  padding: 96px 108px;
+}
+
+.teams-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 64px;
+}
+
+.list-img {
+  width: calc((100% - 24px) / 2);
+}
+
+/* SECTION-5 */
+.section-five {
+  padding: 96px 108px;
+}
+
+.list-section-five {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 72px;
+}
+
+.item-section-five {
+  width: calc((100% - 48px) / 3);
+}
+
+/* FOOTER */
+.footer-main {
+  padding: 96px 0;
+}
+
+.content-footer {
+  padding: 0 108px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 72px;
+}
+
+.descr-footer {
+  margin: 0;
+}
+.form-footer {
+  display: flex;
+  gap: 24px;
+}
+
+/* PORTFOLIO */
+.list-portfolio {
+  row-gap: 72px;
+}
+
+.item-portfolio {
+  width: calc((100% - 24px) / 2);
+}
