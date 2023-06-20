@@ -217,17 +217,6 @@ ul {
   padding: 120px 0;
 }
 
-.title-section-two {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--navyblue-color);
-  margin-bottom: 72px;
-}
-
 .svg-group {
   display: flex;
   align-items: center;
@@ -335,6 +324,17 @@ ul {
 }
 /* SECTION-4 */
 
+.title-two {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--navyblue-color);
+  margin-bottom: 72px;
+}
+
 .title-three {
   font-weight: 500;
   font-size: 20px;
@@ -350,7 +350,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
-  margin-bottom: 8px;
 }
 
 /* Section-5 */

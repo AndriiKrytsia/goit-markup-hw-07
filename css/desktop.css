@@ -32,3 +32,8 @@
   display: flex;
   gap: 24px;
 }
+
+.title-section-two {
+  color: var(--navyblue-color);
+  margin-bottom: 8px;
+}

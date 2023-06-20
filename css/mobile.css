@@ -236,6 +236,7 @@
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  color: var(--navyblue-color);
 }
 
 .text-sectiontwo {
