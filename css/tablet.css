@@ -35,6 +35,9 @@
 }
 
 /* SECTION-1 */
+.section-one {
+  padding: 112px 0;
+}
 
 /* SECTION-2 */
 .section-two {
@@ -78,8 +81,9 @@
 .teams-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 64px;
+  gap: 64px 24px;
+  width: 552px;
+  margin: 0 auto;
 }
 
 .list-img {
@@ -94,8 +98,9 @@
 .list-section-five {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 72px;
+  gap: 72px 24px;
+  width: 552px;
+  margin: 0 auto;
 }
 
 .item-section-five {

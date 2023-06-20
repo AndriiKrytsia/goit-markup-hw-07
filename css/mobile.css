@@ -120,6 +120,12 @@
   color: var(--ocean-color);
 }
 
+@media screen and (max-width: 427px) {
+  .tel-item {
+    font-size: 22px;
+  }
+}
+
 .addres-item {
   font-weight: 500;
   font-size: 20px;
@@ -174,15 +180,15 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/background/mobile-bg.jpg);
+    url(../images/background/mobile-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   text-align: center;
 }
 
@@ -194,7 +200,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/background/mobile-bg-retina.jpg);
+      url(../images/background/mobile-bg-retina.jpg);
   }
 }
 
