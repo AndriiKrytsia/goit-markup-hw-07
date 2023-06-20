@@ -88,12 +88,13 @@
 .item-menu {
   display: flex;
   flex-direction: column;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-menu:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .link-menu {
-  display: block;
-  gap: 40px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -133,8 +134,16 @@
 
 .social-group-menu {
   display: flex;
-  gap: 56px;
-  justify-content: flex-start;
+}
+@media screen and (max-width: 427px) {
+  .social-group-menu {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 428px) {
+  .social-group-menu {
+    gap: 56px;
+  }
 }
 
 .link-social-menu {
@@ -196,9 +205,15 @@
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  max-width: 320px;
 }
 
 /* Section-2 */
+
+.section-two {
+  padding: 96px 0;
+}
 
 .list-advantages {
   display: flex;
@@ -211,6 +226,7 @@
 }
 
 .title-section-two {
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -237,9 +253,9 @@
 }
 
 /* Section-4 */
-/* .section-four {
-  min-width: 400px;
-} */
+.section-four {
+  padding: 96px 0;
+}
 
 .list-img {
   max-width: 264px;
@@ -253,6 +269,9 @@
 }
 
 /* Section-5 */
+.section-five {
+  padding: 96px 0;
+}
 
 .list-section-five {
   display: flex;
@@ -299,6 +318,7 @@
 .input-form-footer {
   max-width: 396px;
   width: 100%;
+  opacity: 0.3;
 }
 
 .form-footer {
@@ -333,4 +353,12 @@
 
 .item-portfolio {
   min-width: 360px;
+}
+
+/* MODAL ELEMENT */
+.modal-element {
+  width: 100%;
+  max-width: 392px;
+  padding-left: 16px;
+  padding-right: 16px;
 }

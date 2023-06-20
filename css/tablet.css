@@ -45,6 +45,15 @@
   display: none;
 }
 
+.title-section-two {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
 .list-advantages {
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +72,7 @@
 
 /* SECTION-4 */
 .section-four {
-  padding: 96px 108px;
+  padding: 96px 0;
 }
 
 .teams-list {
@@ -79,7 +88,7 @@
 
 /* SECTION-5 */
 .section-five {
-  padding: 96px 108px;
+  padding: 96px 0;
 }
 
 .list-section-five {
@@ -114,6 +123,9 @@
   gap: 24px;
 }
 
+.input-form-footer {
+  opacity: 0.3;
+}
 /* PORTFOLIO */
 .list-portfolio {
   row-gap: 72px;

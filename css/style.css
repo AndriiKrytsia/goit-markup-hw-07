@@ -604,11 +604,6 @@ ul {
   color: var(--white-color);
 }
 
-.form-footer {
-  /* display: flex;
-  gap: 24px; */
-}
-
 .input-form-footer {
   width: 264px;
   height: 40px;
@@ -716,7 +711,7 @@ ul {
 /* FORM */
 .title-form {
   margin-bottom: 16px;
-  width: 360px;
+  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
